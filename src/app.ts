@@ -18,7 +18,7 @@ app.use('/tasks',taskRouter)
 app.use('/onboard',onboardRouter)
 
 app.get('/',(req:Request,res:Response)=>{
-res.send('App is running and uploads should run!')
+res.send('App is running and uploads should run now!')
 })
 
 app.listen(port,async() => {
