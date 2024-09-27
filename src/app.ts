@@ -4,6 +4,7 @@ import db from "../db/db"
 import userRouter from "./routes/user"
 import taskRouter from "./routes/task"
 import onboardRouter from "./routes/onboard"
+import { Request,Response } from 'express'
 
 const port = process.env.PORT || 8080
 const app = express()
@@ -15,6 +16,10 @@ app.use('/uploads/', express.static('uploads'));
 app.use('/users', userRouter)
 app.use('/tasks',taskRouter)
 app.use('/onboard',onboardRouter)
+
+app.get('/',(req:Request,res:Response)=>{
+res.send('App is Working!')
+})
 
 app.listen(port,async() => {
   try {
