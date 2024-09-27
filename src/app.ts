@@ -18,7 +18,7 @@ app.use('/tasks',taskRouter)
 app.use('/onboard',onboardRouter)
 
 app.get('/',(req:Request,res:Response)=>{
-res.send('App is Working!')
+res.send('App is Hosted!')
 })
 
 app.listen(port,async() => {
