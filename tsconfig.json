@@ -5,7 +5,10 @@
         "baseUrl": "src",
         "outDir": "dist",
         "sourceMap": true,
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "esModuleInterop": true,  // Add this line
+        "skipLibCheck": true,      // Optional: skip type checking for declaration files
+        "forceConsistentCasingInFileNames": true // Optional: enforce case sensitivity
     },
     "include": ["src/**/*"]
 }
