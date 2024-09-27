@@ -1,0 +1,69 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1726532245347,
+      "tag": "0000_closed_kabuki",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1726533337574,
+      "tag": "0001_wandering_microbe",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1726538421429,
+      "tag": "0002_gigantic_stepford_cuckoos",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1726541983414,
+      "tag": "0003_fantastic_freak",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1726626710445,
+      "tag": "0004_last_otto_octavius",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1726721385831,
+      "tag": "0005_condemned_skaar",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1726725381189,
+      "tag": "0006_overrated_angel",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1726760720318,
+      "tag": "0007_kind_mercury",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1727324820026,
+      "tag": "0008_overjoyed_warpath",
+      "breakpoints": true
+    }
+  ]
+}
