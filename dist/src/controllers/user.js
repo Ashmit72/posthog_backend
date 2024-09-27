@@ -57,7 +57,7 @@ async function createUser(req, res) {
             username: newUser.username,
             email: newUser.email,
             password: hashedPassword,
-            profilePicture: `http://localhost:8080/${profilePicture}`
+            profilePicture: `https://posthog-backend.onrender.com/${profilePicture}`
         }).returning({ insertedId: user_1.UserTable.id });
         // Track the event for user creation
         client.capture({

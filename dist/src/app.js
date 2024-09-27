@@ -18,6 +18,9 @@ app.use('/uploads/', express_1.default.static('uploads'));
 app.use('/users', user_1.default);
 app.use('/tasks', task_1.default);
 app.use('/onboard', onboard_1.default);
+app.get('/', (req, res) => {
+    res.send('App is running and uploads should run!');
+});
 app.listen(port, async () => {
     try {
         await db_1.default.select();
