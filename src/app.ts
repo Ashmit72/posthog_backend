@@ -5,9 +5,18 @@ import userRouter from "./routes/user"
 import taskRouter from "./routes/task"
 import onboardRouter from "./routes/onboard"
 import { Request,Response } from 'express'
+import fs from 'fs';
+import path from 'path';
+
 
 const port = process.env.PORT || 8080
 const app = express()
+
+const uploads = path.join(__dirname, '..', 'uploads');
+if (!fs.existsSync(uploads)) {
+    fs.mkdirSync(uploads, { recursive: true });
+    console.log(`'uploads' directory created at ${uploads}`);
+}
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
