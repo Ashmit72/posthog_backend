@@ -2,7 +2,9 @@
   "scripts": {
     "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 nodemon",
     "start:prod": "NODE_TLS_REJECT_UNAUTHORIZED=0 node dist/src/app.js",
-    "build": "tsc"
+    "build": "tsc",
+    "postbuild": "mkdir -p dist/uploads"
+
   },
   "dependencies": {
     "bcrypt": "^5.1.1",

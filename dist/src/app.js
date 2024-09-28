@@ -19,7 +19,7 @@ app.use('/users', user_1.default);
 app.use('/tasks', task_1.default);
 app.use('/onboard', onboard_1.default);
 app.get('/', (req, res) => {
-    res.send('App is running and uploads should run!');
+    res.send('App is running and uploads should run now!');
 });
 app.listen(port, async () => {
     try {
