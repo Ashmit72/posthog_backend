@@ -11,11 +11,11 @@ const app = express()
 
 // app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: 'http://localhost:5173', // Replace with your frontend domain
+  origin: '*', // Allow all origins
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true // Allow cookies or auth headers
-}))
+}));
+
 app.use(express.json())
 app.use('/uploads/', express.static('uploads'));
 app.use('/users', userRouter)
