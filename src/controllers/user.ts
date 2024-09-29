@@ -54,7 +54,7 @@ export async function createUser(req: Request, res: Response) {
             username: newUser.username,
             email: newUser.email,
             password: hashedPassword,
-           profilePicture:`https://localhost:8080/${profilePicture}`
+           profilePicture:`http://13.233.168.114:8080/${profilePicture}`
         }).returning({insertedId:UserTable.id})
 
         // Track the event for user creation
